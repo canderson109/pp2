@@ -27,6 +27,8 @@ include("functions.php");
 echo nl2br("Step 1" . "\n");
 printArr($numbers);
 
+echo nl2br("Step 2" . "\n");
+echo largest($numbers);
 ?>
 
 </body>
