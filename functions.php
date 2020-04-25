@@ -24,3 +24,9 @@ function removeDups($array) {
     $array = array_unique($array);
     return $array;
 }
+
+function distribution($array) {
+    $array = array_count_values($array);
+    ksort($array);
+    return $array;
+}

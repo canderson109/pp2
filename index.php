@@ -34,6 +34,10 @@ foreach (removeDups($numbers) as $placeholder) {
     echo nl2br($placeholder . "\n");
 }
 
+echo nl2br("Step 4" . "\n");
+foreach (distribution($numbers) as $placeholder) {
+    echo nl2br($placeholder . "\n");
+}
 ?>
 
 </body>
