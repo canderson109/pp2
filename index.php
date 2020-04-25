@@ -29,6 +29,11 @@ printArr($numbers);
 
 echo nl2br("Step 2" . "\n");
 echo largest($numbers);
+echo nl2br("\n" . "Step 3" . "\n");
+foreach (removeDups($numbers) as $placeholder) {
+    echo nl2br($placeholder . "\n");
+}
+
 ?>
 
 </body>

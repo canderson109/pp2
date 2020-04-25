@@ -19,3 +19,8 @@ function largest($array) {
 
     return $compare;
 }
+
+function removeDups($array) {
+    $array = array_unique($array);
+    return $array;
+}
