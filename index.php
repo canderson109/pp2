@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 /*
  * Name:  Conner Anderson
  * Date:  4/24/2020
@@ -6,9 +8,8 @@
  * Title: Pair Program 2
  */
 
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +19,16 @@ error_reporting(E_ALL);
 <body>
 
 <?php
-echo "<h1>PHP Array Practice</h1>"
+echo "<h1>PHP Array Practice</h1>";
+$numbers = array(7, 9, 8, 9, 8, 8, 6);
+function printArr($array) {
+    foreach ($array as $placeholder) {
+        echo nl2br($placeholder . "\n");
+    }
+}
+
+echo nl2br("Step 1" . "\n");
+printArr($numbers);
 
 ?>
 
